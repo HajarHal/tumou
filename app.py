@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import tensorflow as tf
-import cv2
 from PIL import Image
 
 model_path = 'braintumor.h5'  # Update with the correct path if necessary
@@ -14,7 +13,6 @@ st.markdown("<h1 style='text-align: center; color: #00e3f8;'>Brain Tumor Classif
 st.sidebar.image('H.png', width=250)
 st.sidebar.info('This app classifies brain tumor images into four categories.')
 st.sidebar.markdown("[Learn More](https://github.com/HajarHal/brain_tumour)")
-
 
 # Custom CSS for sidebar
 # Apply background color to the sidebar
@@ -33,7 +31,8 @@ st.markdown(
 def predict(image):
     # Preprocess the image if necessary
     # For example, resize it to match the input size of your model
-    image = cv2.resize(image, (150, 150))
+    image = image.resize((150, 150))  # Resize using PIL
+    image = np.array(image)  # Convert PIL image to numpy array
     image = image.reshape(1, 150, 150, 3)  # Reshape for model input
     # Make prediction
     prediction = model.predict(image)
@@ -44,7 +43,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 
 if uploaded_file is not None:
     # Display the uploaded image
-    image = np.array(Image.open(uploaded_file))
+    image = Image.open(uploaded_file)
     st.image(image, caption='Uploaded Image', use_column_width=True)
 
     # Make prediction on the uploaded image
