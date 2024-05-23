@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import tensorflow as tf
-import cv2
+import cv2 as os
 from PIL import Image
 
 model_path = 'braintumor.h5'  # Update with the correct path if necessary
@@ -33,7 +33,7 @@ st.markdown(
 def predict(image):
     # Preprocess the image if necessary
     # For example, resize it to match the input size of your model
-    image = cv2.resize(image, (150, 150))
+    image = os.resize(image, (150, 150))
     image = image.reshape(1, 150, 150, 3)  # Reshape for model input
     # Make prediction
     prediction = model.predict(image)
