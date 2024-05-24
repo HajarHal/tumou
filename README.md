@@ -60,17 +60,6 @@ Potential improvements and future directions for the project include:
 
 This project showcases the potential of deep learning in medical image analysis, providing a valuable tool for the early detection of brain tumors. By combining advanced machine learning techniques with accessible deployment methods, we aim to support and enhance medical diagnostic processes.
 
-## Acknowledgements
-
-Special thanks to the data providers and the open-source community for their invaluable resources and support.
-
----
-
-Feel free to clone the repository, explore the code, and contribute to future improvements. For more information, please refer to the detailed documentation and code comments.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
