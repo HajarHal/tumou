@@ -60,8 +60,11 @@ Potential improvements and future directions for the project include:
 
 This project showcases the potential of deep learning in medical image analysis, providing a valuable tool for the early detection of brain tumors. By combining advanced machine learning techniques with accessible deployment methods, we aim to support and enhance medical diagnostic processes.
 
-
+## Document (Rapport)
+https://drive.google.com/file/d/133MmDaWGjhFfhUWaVqCGC3FkDYaFMwuu/view?usp=drive_link
 ---
+## Lien d'application
+https://hajarhal-tumou-app-axpqcv.streamlit.app/
 
 ## How to Run
 
