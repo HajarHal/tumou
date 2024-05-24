@@ -5,8 +5,5 @@ seaborn==0.13.2
 Pillow==10.3.0
 numpy==1.26.4
 streamlit==1.34.0
-<<<<<<< HEAD
 ipywidgets==8.1.2
-=======
 ipywidgets==8.1.2
->>>>>>> 3f1c63f3a9e36ad1a6d6aea99c78707d1c1b90fe
